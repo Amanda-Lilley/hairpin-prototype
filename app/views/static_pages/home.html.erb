@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+  <div class="row home">
     <div class="col-md-6 col-md-offset-3 front fill">
       <%= bootstrap_flash %>
       <%= image_tag 'hair2.jpg' %>
@@ -10,8 +10,8 @@
 
         <ul class="nav nav-list">
           <li class="nav-header text-center">View portfolios of skilled stylist in your area</li>
-          <li><button class="btn btn-block btn-info"><%= link_to "Join Now!", "/path1"  %></button></li>
-          <li><button class="btn btn-block btn-info"><%= link_to "Log In", "/path2"  %></button></li>
+          <li><button class="btn btn-block btn-info"><%= link_to "Join Now!", new_user_registration_path %></button></li>
+          <li><button class="btn btn-block btn-info"><%= link_to "Log In", user_session_path  %></button></li>
         </ul>
       </div><!--/.well -->
     </div><!--/span-->
